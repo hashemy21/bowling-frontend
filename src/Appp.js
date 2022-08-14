@@ -83,7 +83,7 @@ function Appp() {
 					<h1 className="Title">Bowling</h1>
 				</header>
 				<p className="Intro">Enter your score in after each bowl</p>
-				<Game />
+				<Game playerName={setPlayers[players]} />
 			</div>
 		);
 	}
