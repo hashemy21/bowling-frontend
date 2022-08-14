@@ -8,7 +8,7 @@ import './Game.css';
 export default class Game extends Component {
 	render() {
 		const {
-			game: { frames, cumulativeScores, gameOver, pins, rolls },
+			game: { frames, cumulativeScores,playerName, gameOver, pins, rolls },
 		} = this.props;
 
 		const totalScore = cumulativeScores.slice(-1)[0];
@@ -18,6 +18,7 @@ export default class Game extends Component {
 					frames={frames}
 					cumulativeScores={cumulativeScores}
 					totalScore={totalScore}
+					playerName={playerName}
 				/>
 				<Controls
 					gameOver={gameOver}
